@@ -227,7 +227,7 @@ body {
   margin-bottom: 50px;
 }
 
-.team-members {
+.team-member {
   display: flex;
   justify-content: space-between;
 }
@@ -238,6 +238,10 @@ body {
   padding-bottom: 30px;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-pic {
+  background-color: #ffffff;
 }
 
 .team-photo {
@@ -301,18 +305,19 @@ body {
 
 /* clients */
 .clients {
-  padding: 94px 0;
+  padding: 97px 0;
   text-align: center;
 }
 
 .clients h2 {
-  font-family: Roboto;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
   line-height: 100%;
   letter-spacing: 3%;
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .client-logos {
@@ -320,32 +325,30 @@ body {
   justify-content: center;
   gap: 30px;
   list-style: none;
-  width: 41;
-  height: 46.70263671875;
-  top: 7px;
-  left: 32px;
+  width: 106;
+  height: 60;
 }
 
 .icon-box a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170;
-  height: 92;
-  top: 2490px;
-  left: 215px;
+  width: 170px;
+  height: 92px;
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
   color: rgba(175, 177, 184, 1);
 }
 
 .icon-box svg {
-  width: 41;
-  height: 46.70263671875;
-  top: 7px;
-  left: 32px;
-
-  fill: currentColor;
+  width: 106px;
+  height: 60px;
+  top: 16px;
+  fill: rgba(175, 177, 184, 1);
+}
+.clients-logos a:hover {
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
 /* Footer */
@@ -353,7 +356,7 @@ body {
   background-color: #2f303a;
   color: white;
   padding: 60px 0;
-  text-align: left;
+  text-align: center;
 }
 
 .footer .logo {
@@ -372,6 +375,62 @@ body {
   margin: 5px 0;
 }
 
+.footer-info1 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-info {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-connect {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+}
+
 .footer .social-links {
   margin-top: 20px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+.footer-item a:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.footer-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: rgba(175, 177, 184, 1);
+}
+
+.footer-item svg {
+  width: 20px;
+  height: 20px;
+  fill: rgba(255, 255, 255, 1);
 }
