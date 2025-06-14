@@ -58,6 +58,37 @@
         </ul>
       </div>
     </header>
+
+    <div class="popup">
+      <div class="popup-window">
+        <button class="close-btn">x</button>
+        <h2>Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="form">
+          <ul class="list">
+            <li class="list-item">
+              <input type="text" placeholder="Ім'я" required />
+            </li>
+            <li class="list-item">
+              <input type="tel" placeholder="Телефон" required />
+            </li>
+            <li class="list-item">
+              <input type="email" placeholder="Пошта" required />
+            </li>
+            <li class="list-item">
+              <textarea placeholder="Коментар"></textarea>
+            </li>
+            <li class="list-item">
+              <input type="checkbox" required />
+              <span
+                >Погоджуюся з розсилкою та приймаю
+                <a href="#">Умови договору</a>
+              </span>
+            </li>
+            <button type="submit" class="submit-btn">Відправити</button>
+          </ul>
+        </form>
+      </div>
+    </div>
     <main>
       <section class="banner">
         <div class="container">
@@ -380,5 +411,14 @@
         </ul>
       </div>
     </footer>
+    <script>
+      const openBtn = document.querySelector(".open-popup");
+      const popup = document.querySelector(".popup");
+      const closeBtn = document.querySelector(".close-btn");
+
+      closeBtn.addEventListener("click", () => {
+        popup.classList.add("hidden");
+      });
+    </script>
   </body>
 </html>

@@ -97,6 +97,101 @@ body {
   fill: currentColor;
 }
 
+/*pop-up*/
+
+.popup.backdrop {
+  position: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+.popup-window {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 400px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.popup-window h2 {
+  margin-top: 0;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item input,
+.list-item textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.list-item textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 10px;
+}
+
+.checkbox a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 /* banner */
 .banner {
   background-image: url("./images/jkh.png");
