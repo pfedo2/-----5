@@ -25,6 +25,13 @@
         <a class="logo">Web<span>Studio </span></a>
 
         <nav class="nav">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link current">Студія</a></li>
+              <li><a href="portfolio.html" class="nav-link">Портфоліо</a></li>
+              <li><a href="contacts.html" class="nav-link">Контакти</a></li>
+            </ul>
+          </nav>
           <ul class="nav-list">
             <li>
               <a href="#">Студія</a>
@@ -59,33 +66,27 @@
       </div>
     </header>
 
-    <div class="popup" data-modal>
+    <div class="popup is-hidden" data-modal>
       <div class="popup-window">
         <button class="close-btn" data-modal-close>x</button>
         <h2>Залиште свої дані, ми вам передзвонимо</h2>
-        <form class="form">
-          <ul class="list">
-            <li class="list-item">
-              <input type="text" placeholder="Ім'я" required />
-            </li>
-            <li class="list-item">
-              <input type="tel" placeholder="Телефон" required />
-            </li>
-            <li class="list-item">
-              <input type="email" placeholder="Пошта" required />
-            </li>
-            <li class="list-item">
-              <textarea placeholder="Коментар"></textarea>
-            </li>
-            <li class="list-item">
-              <input type="checkbox" required />
-              <span
-                >Погоджуюся з розсилкою та приймаю
-                <a href="#">Умови договору</a>
-              </span>
-            </li>
-            <button type="submit" class="submit-btn">Відправити</button>
-          </ul>
+        <form class="popup-form">
+          <label class="popup-label"
+            >Ім'я
+            <input class="popup-input" type="text" placeholder="Ім'я" required
+          /></label>
+          <input type="tel" placeholder="Телефон" required />
+          <input type="email" placeholder="Пошта" required />
+
+          <textarea placeholder="Коментар"></textarea>
+
+          <input type="checkbox" required />
+          <span
+            >Погоджуюся з розсилкою та приймаю
+            <a href="#">Умови договору</a>
+          </span>
+
+          <button type="submit" class="submit-btn">Відправити</button>
         </form>
       </div>
     </div>
