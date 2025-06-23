@@ -156,8 +156,23 @@ body {
 .popup-label {
   display: flex;
   flex-direction: column;
-  gap: 
-  font-si
+  gap: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.popup-input-svg {
+  width: 12px;
+  height: 12px;
+  margin-top: 3px;
+  margin-left: 3px;
+  color: rgba(33, 33, 33, 1);
+}
+.checkbox {
+  width: 448px;
+  height: 120px;
+  margin-bottom: 20px;
 }
 
 .popup-window h2 {
@@ -220,14 +235,23 @@ body {
 }
 
 .submit-btn {
+  align-items: center;
   background-color: #2196f3;
   color: white;
   border: none;
   padding: 12px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   border-radius: 4px;
   cursor: pointer;
+
+  font-family: "Roboto";
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+
+  width: 200px;
+  height: 50px;
 }
 
 /* banner */

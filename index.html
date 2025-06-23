@@ -73,14 +73,31 @@
         <form class="popup-form">
           <label class="popup-label"
             >Ім'я
-            <input class="popup-input" type="text" placeholder="Ім'я" required
-          /></label>
-          <input type="tel" placeholder="Телефон" required />
-          <input type="email" placeholder="Пошта" required />
-
-          <textarea placeholder="Коментар"></textarea>
-
+            <svg class="popup-input-svg">
+              <use href="images\symbol-defsarar.svg#icon-cholovik"></use>
+            </svg>
+            <input class="popup-input" type="text" placeholder="" required />
+          </label>
+          <label class="popup-label"
+            >Телефон
+            <svg class="popup-input-svg">
+              <use href="images\symbol-defsarar.svg#icon-list"></use>
+            </svg>
+            <input type="tel" placeholder="" required />
+          </label>
+          <label class="popup-label"
+            >Пошта
+            <svg class="popup-input-svg">
+              <use href="images\symbol-defsarar.svg#icon-telephon"></use>
+            </svg>
+            <input type="email" placeholder="" required />
+          </label>
+          <label class="popup-label"
+            >Коментар
+            <textarea placeholder="Ввести текст"></textarea>
+          </label>
           <input type="checkbox" required />
+
           <span
             >Погоджуюся з розсилкою та приймаю
             <a href="#">Умови договору</a>
