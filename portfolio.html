@@ -4,36 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфоліо | WebStudio</title>
-    <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="stylesheet" href="./portfolio.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-wrap">
+        <a class="logo">Web<span>Studio </span></a>
+
         <nav class="nav">
-          <ul class="nav-list">
-            <li><a href="index.html" class="nav-link">Студія</a></li>
-            <li>
-              <a href="portfolio.html" class="nav-link current">Портфоліо</a>
-            </li>
-            <li><a href="" class="nav-link">Контакти</a></li>
-          </ul>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li>
+                <a href="index.html" class="nav-link current">Студія</a>
+              </li>
+              <li>
+                <a href="portfolio.html" class="nav-link">Портфоліо</a>
+              </li>
+
+              <li></li>
+              <li><a href="contacts.html" class="nav-link">Контакти</a></li>
+            </ul>
+          </nav>
         </nav>
+
+        <ul class="contact">
+          <li>
+            <a href="mailto:info@webstudio.com">
+              <svg>
+                <use href="./images/symbol-defs1.svg#icon-letter"></use>
+              </svg>
+              info@webstudio.com
+            </a>
+          </li>
+          <li>
+            <a>
+              <svg>
+                <use href="./images/symbol-defs1.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
+
     <main>
       <section class="portfolio">
         <div class="container">
-          <h1 class="section-title">Наші проєкти</h1>
+          <div class="filter-buttons">
+            <button type="button" class="filter-btn active">Усі</button>
+            <button type="button" class="filter-btn">Веб-сайти</button>
+            <button type="button" class="filter-btn">Додатки</button>
+            <button type="button" class="filter-btn">Дизайн</button>
+            <button type="button" class="filter-btn">Маркетинг</button>
+          </div>
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img src="./img-portfolio/img (1)csh.png" alt="Технокряк" />
                 <div class="portfolio-overlay">
-                  <p class="overlay-text">Веб-сайт</p>
+                  <p class="overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
               </div>
               <div class="portfolio-description">
@@ -49,7 +89,11 @@
                   alt="Постер New Orlean vs Golden Star"
                 />
                 <div class="portfolio-overlay">
-                  <p class="overlay-text">Дизайн</p>
+                  <p class="overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
               </div>
               <div class="portfolio-description">
@@ -64,7 +108,11 @@
               <div class="portfolio-thumb">
                 <img src="./img-portfolio/img (2).png" alt="Ресторан Seafood" />
                 <div class="portfolio-overlay">
-                  <p class="overlay-text">Додаток</p>
+                  <p class="overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
               </div>
               <div class="portfolio-description">
@@ -77,7 +125,11 @@
               <div class="portfolio-thumb">
                 <img src="./img-portfolio/img (3).png" alt="Проєкт Prime" />
                 <div class="portfolio-overlay">
-                  <p class="overlay-text">Маркетинг</p>
+                  <p class="overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
               </div>
               <div class="portfolio-description">
@@ -90,7 +142,11 @@
               <div class="portfolio-thumb">
                 <img src="./img-portfolio/img (4).png" alt="Проєкт Boxes" />
                 <div class="portfolio-overlay">
-                  <p class="overlay-text">Додаток</p>
+                  <p class="overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
               </div>
               <div class="portfolio-description">
@@ -106,7 +162,11 @@
                   alt="Inspiration has no Borders"
                 />
                 <div class="portfolio-overlay">
-                  <p class="overlay-text">Веб-сайт</p>
+                  <p class="overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
               </div>
               <div class="portfolio-description">
@@ -122,7 +182,11 @@
                   alt="Видання Limited Edition"
                 />
                 <div class="portfolio-overlay">
-                  <p class="overlay-text">Дизайн</p>
+                  <p class="overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
               </div>
               <div class="portfolio-description">
@@ -135,7 +199,11 @@
               <div class="portfolio-thumb">
                 <img src="./img-portfolio/img (7).png" alt="Проєкт LAB" />
                 <div class="portfolio-overlay">
-                  <p class="overlay-text">Маркетинг</p>
+                  <p class="overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
               </div>
               <div class="portfolio-description">
@@ -148,7 +216,11 @@
               <div class="portfolio-thumb">
                 <img src="./img-portfolio/img (8).png" alt="Growing Business" />
                 <div class="portfolio-overlay">
-                  <p class="overlay-text">Додаток</p>
+                  <p class="overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
               </div>
               <div class="portfolio-description">

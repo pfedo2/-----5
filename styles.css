@@ -55,13 +55,20 @@ body {
   font-size: 24px;
   color: #2196f3;
   text-decoration: none;
+  margin-right: 150px;
 }
 
 .logo span {
   color: #000;
 }
 
-.nav .nav-list {
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+}
+
+.nav-list {
   display: flex;
   gap: 50px;
   list-style: none;
