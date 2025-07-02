@@ -16,7 +16,6 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
-
 .header {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
@@ -34,16 +33,24 @@ img {
   font-size: 24px;
   color: #2196f3;
   text-decoration: none;
+  margin-right: 150px;
 }
 
 .logo span {
   color: #000;
 }
 
-.nav .nav-list {
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+}
+
+.nav-list {
   display: flex;
   gap: 50px;
   list-style: none;
+  margin-left: 93px;
 }
 .nav-list a {
   position: relative;
@@ -98,6 +105,7 @@ img {
   height: 12px;
   fill: currentColor;
 }
+
 .filter-buttons {
   display: flex;
   gap: 8px;
@@ -174,7 +182,9 @@ img {
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transform: translateY(100%);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 20px;
   box-sizing: border-box;
 }
