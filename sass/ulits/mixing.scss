@@ -1,0 +1,36 @@
+@mixin container($width: 1200px, $padding: 15px) {
+  width: $width;
+  margin: 0 auto;
+  padding: 0 $padding;
+}
+
+@mixin font($weight, $size, $lh: normal, $ls: normal, $align: left) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lh;
+  letter-spacing: $ls;
+  text-align: $align;
+}
+
+@mixin box-shadow($color: rgba(0, 0, 0, 0.1), $blur: 4px) {
+  box-shadow: 0 2px $blur $color;
+}
+
+@mixin transition($props...) {
+  transition: $props;
+}
+
+@mixin button($bg, $color: white, $radius: 4px) {
+  background-color: $bg;
+  color: $color;
+  border: none;
+  border-radius: $radius;
+  cursor: pointer;
+}
+
+@mixin flex($gap: 30px, $justify: space-between, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}

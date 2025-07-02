@@ -1,5 +1,5 @@
-@import "./base/reset.scss";
-@import "./base/variables.scss";
+@import "./ulits/reset.scss";
+@import "./ulits/variables.scss";
 @import "./components/page-header.scss";
 @import "./components/logo.scss";
 @import "./components/nav.scss";
@@ -10,3 +10,6 @@
 @import "./components/clients.scss";
 @import "./components/footer.scss";
 @import "./components/popup.scss";
+
+@import "./ulits/placeholder.scss";
+@import "./ulits/mixing.scss";

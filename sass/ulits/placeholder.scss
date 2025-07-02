@@ -1,0 +1,32 @@
+%reset-mp {
+  margin: 0;
+  padding: 0;
+}
+
+%reset-elements {
+  h1, h2, h3, h4, h5, h6,
+  p, ul, li, img, button {
+    @extend %reset-mp;
+  }
+}
+
+%box-sizing {
+  box-sizing: border-box;
+}
+
+%is-hidden {
+  display: none;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
