@@ -72,6 +72,7 @@ body {
   display: flex;
   gap: 50px;
   list-style: none;
+  margin-left: 93px;
 }
 .nav-list a {
   position: relative;
